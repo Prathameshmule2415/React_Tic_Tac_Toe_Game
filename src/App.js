@@ -28,7 +28,7 @@ const App = () => {
     }
 
     if (itemArray[itemNumber] === "empty") {
-      itemArray[itemArray] = isCross ? "cross" : "circle";
+      itemArray[itemNumber] = isCross ? "cross" : "circle";
       setIsCross(!isCross);
     } else {
       return toast("Already Filled", { type: "error" });
